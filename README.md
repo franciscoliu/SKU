@@ -1,3 +1,3 @@
-# Implementation of Selective Knowledge negation Unlearning (SKU)
+# Selective Knowledge negation Unlearning (SKU)
 Coming soon
 
