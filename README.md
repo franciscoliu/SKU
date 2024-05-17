@@ -22,8 +22,8 @@ our OPT model experiments on 3 A100 GPUs (80GiB), and llama model experiments on
 
 
 ## Dataset
-We use the TruthfulQA dataset (avilable on github, one can simply use ```wget``` command to pull the data) as the normal data. 
-And we use PKU-SafeRLHF (avilable on Huggaingface) as  the harmful data.
+We use the [TruthfulQA dataset](https://github.com/sylinrl/TruthfulQA/blob/main/data/v0/TruthfulQA.csv) (avilable on github, one can simply use ```wget``` command to pull the data) as the normal data. 
+And we use [PKU-SafeRLHF](https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF) (avilable on Huggaingface) as  the harmful data.
 
 ## Unlearn
 We can perform the unlearning by run the following command. Here we show an example of how to unlearn harmfulness learned from the pretrained OPT2.7B. 
