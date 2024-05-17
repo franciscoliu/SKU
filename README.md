@@ -18,7 +18,7 @@ We conduct our experiments on OPT2.7b, llama2-7b and llama2-13b model.
 
 ## GPU requirements
 Since task vector would require state_dict deduction and addition between two models, we conduct
-our OPT model experiments on 3 A100 GPUs (80GiB), and llama model experiments on 4 A100 GPUs (80GiB).
+our OPT model experiments on 3 A100 GPUs (80GiB), and llama model experiments on 4 A100 GPUs (80GiB). However, you don't have to run everything one time, you may break down the fine-tuning and task vector process in [unlearn_harm_new.py](https://github.com/franciscoliu/SKU/blob/main/harmful_unlearn/unlearn_harm_new.py) file. We also added one new version of task vector in comment to save GPU usage, please refer to [task_vector.py](https://github.com/franciscoliu/SKU/blob/main/task_vector.py#L65)
 
 
 ## Dataset
