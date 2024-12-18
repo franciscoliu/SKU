@@ -208,6 +208,7 @@ def compute_reverse_kl(pretrained_model, current_model, batch, device):
     prob_p = torch.nn.functional.softmax(pretrained_outputs.logits, dim=-1)
 
     # Negative KL divergence: sum(Q * log(Q/P))
+    # loss = (prob_q * torch.log(prob_q / (prob_p + 1e-12))).sum(-1).mean()
     loss = - (prob_p * torch.log((prob_p + 1e-12) / prob_q)).sum(-1).mean()
 
     return loss
